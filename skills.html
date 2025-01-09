@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+      
+        header {
+            background-color: #003366;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav ul li {
+            margin: 0;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            background-color: #1e73be;
+        }
+
+   
+        #skills {
+            background-color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            max-width: 900px;
+            margin: 40px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #skills h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #003366;
+        }
+
+        .skills-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-container ul li {
+            font-size: 18px;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        
+        .projects-container {
+            margin-top: 40px;
+        }
+
+        .projects-container .project {
+            background-color: #f9f9f9;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .projects-container .project h3 {
+            margin-top: 0;
+            color: #003366;
+            font-size: 22px;
+        }
+
+        .projects-container .project p {
+            font-size: 16px;
+            color: #555;
+        }
+
+       
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <nav style="display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; background-color: #003366;">
+            <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+                <li style="margin: 0 10px;"><a href="index .html" style="text-decoration: none; color: white;">Home</a></li>
+                <li style="margin: 0 10px;"><a href="about.html" style="text-decoration: none; color: white;">About Me</a></li>
+                <li style="margin: 0 10px;"><a href="education.html" style="text-decoration: none; color: white;">Education</a></li>
+                <li style="margin: 0 10px;"><a href="skills.html" style="text-decoration: none; color: white;">Skills</a></li>
+                <li style="margin: 0 10px;"><a href="experience.html" style="text-decoration: none; color: white;">Experience</a></li>
+                <li style="margin: 0 10px;"><a href="contact.html" style="text-decoration: none; color: white;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <ul>
+                <li>HTML5, CSS3, and JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Python Programming</li>
+                <li>Database Management (MySQL, MongoDB)</li>
+                <li>Version Control (Git & GitHub)</li>
+                <li>Team Collaboration and Agile Practices</li>
+            </ul>
+        </div>
+        <h2 style="color: #003366; margin-top: 40px;">Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>Designed a personal website to showcase my skills, experience, and projects.</p>
+            </div>
+            <div class="project">
+                <h3>E-Commerce App</h3>
+                <p>Developed a mock online store using React.js, with features like product filtering and a shopping cart.</p>
+            </div>
+            <div class="project">
+                <h3>Health Tracker</h3>
+                <p>Created a Python-based application to log daily fitness activities and monitor progress over time.</p>
+            </div>
+        </div>
+    </section>
+
+ 
+    <footer>
+        <p>&copy; 2024 My Portfolio | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+     
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #003366;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        header a:hover {
+            background-color: #1e73be;
+            border-radius: 5px;
+        }
+
+        #about {
+            background-color: #ffffff; 
+            color: #333;
+            padding: 50px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    
+        #videoModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #videoModal video {
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        #videoModal button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: white;
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; background-color: #003366;">
+            
+            <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+                <li style="margin: 0 10px;"><a href="index .html" style="text-decoration: none; color: white;">Home</a></li>
+                <li style="margin: 0 10px;"><a href="about.html" style="text-decoration: none; color: white;">About Me</a></li>
+                <li style="margin: 0 10px;"><a href="education.html" style="text-decoration: none; color: white;">Education</a></li>
+                <li style="margin: 0 10px;"><a href="skills.html" style="text-decoration: none; color: white;">Skills</a></li>
+                <li style="margin: 0 10px;"><a href="experience.html" style="text-decoration: none; color: white;">Experience</a></li>
+                <li style="margin: 0 10px;"><a href="contact.html" style="text-decoration: none; color: white;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hello! My name is Nur Adilla Layla. I am currently a  graduated student for Bachelor of Information Science (Hons) Information Systems Management at UiTM Puncak Perdana. I am passionate about coding, designing websites, and solving real-world problems using technology.</p>
+        <p>In my free time, I enjoy exploring new programming languages, creating innovative solutions, and enhancing my technical skills. I strive to be creative and ensure the quality of every project I undertake.</p>
+        <img src="image/profile_picture.jpg" alt="Nur Adilla's Profile Picture" style="width: 200px; border-radius: 50%; margin-top: 20px;">
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Phone: <a href="tel:+60123456789">+60 12-345 6789</a></p>
+            <p>Email: <a href="mailto:adillalayla92@gmail.com">adillalayla@gmail.com</a></p>
+    
+        
+        
+        <div style="margin-top: 30px;">
+            <h2>Watch My Video</h2>
+            <button onclick="openVideo()" 
+                style="padding: 10px 20px; font-size: 16px; background-color: #1e73be; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Play Video
+            </button>
+        </div>
+    
+    </section>
+
+
+    <div id="videoModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; z-index: 1000;">
+        <video controls style="max-width: 80%; max-height: 80%;">
+           
+            <source src="video/about_me_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button onclick="closeVideo()" style="position: absolute; top: 20px; right: 20px; background: white; color: black; border: none; padding: 10px; cursor: pointer;">Close</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Portfolio | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function openVideo() {
+            document.getElementById('videoModal').style.display = 'flex';
+        }
+
+        function closeVideo() {
+            document.getElementById('videoModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
